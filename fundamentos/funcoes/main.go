@@ -1,12 +1,7 @@
 package main
 
-/* Para usar funções dentro de outro arquivo é preciso criar modulos e criar funções públicas que são 
-indicadas pela primeira letra maiúscula */
-import (
-	"funcoes/funcoes"
-)
-
+// Para funcionar, é necessário rodar no terminal o comando: go run funcoes.go main.go
 func main() {
-	resultado := funcoes.Somar(3, 4)
-	funcoes.Imprimir(resultado)
+	resultado := Somar(3, 4)
+	Imprimir(resultado)
 }

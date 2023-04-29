@@ -1,4 +1,4 @@
-package funcoes
+package main
 
 import "fmt"
 
