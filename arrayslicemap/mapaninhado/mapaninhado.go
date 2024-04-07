@@ -18,7 +18,11 @@ func main() {
 
 	delete(funcsPorLetra, "P") // deleta todos os funcionários com a letra P
 
-	for letra, funcs := range funcsPorLetra { // Percorre por todo o map principal e retorn letra e funcs
-		fmt.Println(letra, funcs) // Printa o elemento atual (com dois pares de chave/valor)
+	for nome, salario := range funcsPorLetra { // Percorre por todo o map principal e retorn letra e funcs
+		fmt.Println(nome, salario) // Printa o elemento atual (com dois pares de chave/valor)
+
+		for nome, salario := range salario { // Percorre por todo o map principal e retorn letra e funcs
+			fmt.Println(nome, salario) // Printa o elemento atual (com dois pares de chave/valor)
+		}
 	}
 }
